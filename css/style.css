@@ -97,18 +97,49 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+    border-radius: 20px;
+    filter: grayscale(50%) sepia(50%);
+    scale: 1.5;
 }
 /* Es 9 end */
 
 /* Es 10 start */
 .ex-10-icon {
     font-size: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
 }
 /* Es 10 end */
 
 /* Es 11 start */
 .ex-11-icon {
     font-size: 60px;
+
+}
+
+.ex-11-icon:hover {
+    animation: spin2 2s linear;
+}
+
+@keyframes spin2{
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(0.8turn);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 /* Es 11 end */
 
